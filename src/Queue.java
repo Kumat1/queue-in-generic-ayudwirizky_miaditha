@@ -15,6 +15,24 @@ public class Queue <T> {
     public static void main(String[] args)
     {
         Queue<Integer> q = new Queue<Integer>(Integer.class);
+        Queue<Character> a =  new Queue<Character>(Character.class);
+        a.enq('g');
+        a.enq('l');
+        a.enq('u');
+        a.enq('c');
+        a.enq('k');
+        
+        a.display();
+        System.out.println();
+        a.deq();
+        a.deq();
+        a.display();
+        System.out.println();
+        q.clear();
+        q.display();
+        
+        System.out.println("\n");
+        
         q.enq(2);
         q.enq(6);
         q.enq(4);
@@ -29,6 +47,7 @@ public class Queue <T> {
         q.clear();
         q.display();
     }
+    
 
     public void enq(T item)
     {
